@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ececec;
+}
+::selection {
+    color: #0bd32c;
+}
+
+
+.count_holder {
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.count_holder p {
+    font-size: 1em;
+    font-family:monospace;
+    color: rgb(255, 255, 255);
+    background-color: #131313;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    position: fixed;
+    top: 20px;
+    box-shadow: 0 30px 0px -20px #ee3535;
+    border-radius: 8px;
+    font-family: 'Orbitron';
+}
+.count_holder h1 {
+    font-size: clamp(8em, 10vw, 8em);
+    text-align: center;
+    font-family: 'Orbitron';
+    /* padding: 40px; */
+    padding-block-start: 100px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    color: #131313; 
+    /* background-color: #25252521; */
+}
+/* Apply styling to the container */
+.heading {
+    padding: 8px;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+/* Hide the scrollbar in WebKit browsers (Chrome, Safari) */
+.heading::-webkit-scrollbar {
+    display: none;
+}
+
+.heading::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+.btnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 32px;
+    overflow: hidden;
+}
+.btnContainer .btn {
+    border: 2px solid transparent;
+    padding: 22px;
+    flex:1 1 160px;
+    border-radius: 8px;
+    background-color: #0bd32c;
+    color: #ffffff;
+    transform: scale(1);
+    font-size: 1em;
+    font-family: 'Orbitron';
+    transition: transform .1s ease-in-out;
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 0px rgb(0, 0, 0);
+}
+.btn:active {
+    transform: scale(0.9);
+}
+.btnContainer .reset {
+    background-color: #252525;
+    flex:1 1 300px;
+}
+.btnContainer .reset:hover {
+    box-shadow: 0 5px 0px #ee3535;
+}
+.btnContainer .decrease {
+    background-color: #ee3535;
+}
